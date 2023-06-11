@@ -1,0 +1,123 @@
+@import "const";
+
+.chat-page {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+  }
+
+  &__messages {
+    overflow: auto;
+    background: $pinkColor;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  &__search {
+    background: $greenColor;
+    height: 146px;
+    width: 100%;
+    padding: 21px 10px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $greenColor;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+    color: $greyColor;
+    margin-bottom: 23px;
+  }
+
+  &__right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $whiteGreyColor;
+  }
+
+  &__dialog {
+    background: $yellowColor;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &__dialog-header {
+    background: $yellowColor;
+    border-bottom: 1px solid $greenColor;
+    height: 56px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__dialog-header-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: $whiteGreyColor;
+  }
+
+  &__dialog-header-text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    color: $blackColor;
+  }
+
+  &__dialog-header-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__dialog-sending {
+    height: 54px;
+    background: $pinkColor;
+    border-top: 1px solid $whiteGreyColor;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  &__message-input-wrapper {
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 310px;
+    padding: 12px;
+  }
+}

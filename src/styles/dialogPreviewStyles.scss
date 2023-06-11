@@ -1,0 +1,100 @@
+@import "const";
+
+.dialog-preview {
+  width: 310px;
+  background: $pinkColor;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #B2FAF2;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__message {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $greyColor;
+  }
+
+  &__details {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    background: $whiteGreyColor;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $blackColor;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+  }
+
+  &__time {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    color: $greyColor;
+  }
+
+  &__count {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 12px;
+    color: $whiteColor;
+  }
+
+  &__circle {
+    background: $greenColor;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $yellowColor;
+    height: 12px;
+    width: 12px;
+    border-radius: 0 0 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__delete::before {
+    content: "x";
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  &__delete:hover {
+    opacity: 50%;
+  }
+}

@@ -1,0 +1,9 @@
+@import "const";
+
+.messages {
+  &__wrapper {
+    background: $pinkColor;
+    height: 100%;
+    width: 310px;
+  }
+}

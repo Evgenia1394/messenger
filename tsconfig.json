@@ -1,0 +1,38 @@
+{
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.ts",
+    "./src/**/*.json"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "declaration": false,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    //"strict": true,
+    "noImplicitAny": true,
+    //"strictNullChecks": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true
+  },
+  "files": ["src/index.ts"]
+}
+
+
+//{
+//
+//  "compilerOptions": {
+//    "target": "es2017",
+//    "module": "commonjs",
+//    "outDir": "dist",
+//
+//  }
+//}

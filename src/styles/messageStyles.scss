@@ -1,0 +1,32 @@
+@import "const";
+
+.message {
+  &__wrapper {
+    padding: 11px;
+    border-radius: 10px;
+    background: $greenColor;
+    width: 402px;
+    margin: 10px 20px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__time {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: $greyColor;
+    text-align: end;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+}
